@@ -61,6 +61,7 @@ export const RWebShare = memo((props: RWebShareProps) => {
     return cloneElement(styledComp, {
       ...rest,
       sites: props.sites || defaultSites,
+      data: shareData,
       Icon,
     });
   }, [styledComp]);
